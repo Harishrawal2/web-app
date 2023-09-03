@@ -1,23 +1,23 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState } from 'react';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 // Images
-import Zafronuniversity from "../../assets/Zafronunivrsity.jpg";
+import Zafronuniversity from '../../assets/zafronuniversity.jpg';
 
 // import required modules
-import { Autoplay, Pagination } from "swiper/modules";
-import ZafronUniversity from "../../pages/University/ZafronUniversity";
+import { Autoplay, Pagination } from 'swiper/modules';
+import ZafronUniversity from '../../pages/University/ZafronUniversity';
 
 const Slides = () => {
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s, time, progress) => {
-    progressCircle.current.style.setProperty("--progress", 1 - progress);
+    progressCircle.current.style.setProperty('--progress', 1 - progress);
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
 

@@ -34,10 +34,10 @@ const Slider = () => {
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <Image
                 className="lg:h-48 md:h-36 w-full object-cover object-center"
-                src={'/assets/Story/story1.jpg'}
+                src={'/assets/story/story1.jpg'}
                 alt="blog"
-                height={200}
-                width={200}
+                height={200 * 2}
+                width={200 * 2}
               />
               <div className="p-6">
                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
@@ -80,10 +80,10 @@ const Slider = () => {
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <Image
                 className="lg:h-48 md:h-36 w-full object-cover object-center"
-                src={'/assets/Story/story3.jpg'}
+                src={'/assets/story/story3.jpg'}
                 alt="blog"
-                height={200}
-                width={200}
+                height={200 * 2}
+                width={200 * 2}
               />
               <div className="p-6">
                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
@@ -126,10 +126,10 @@ const Slider = () => {
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <Image
                 className="lg:h-48 md:h-36 w-full object-cover object-center"
-                src={'/assets/Story/story2.jpg'}
+                src={'/assets/story/story2.jpg'}
                 alt="blog"
-                height={200}
-                width={200}
+                height={200 * 2}
+                width={200 * 2}
               />
               <div className="p-6">
                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">

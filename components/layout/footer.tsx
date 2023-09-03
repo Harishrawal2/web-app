@@ -11,7 +11,12 @@ const Footer = () => {
           <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-center text-center">
             <div className="lg:w-1/4 md:w w-full lg:px-12">
               <Link href="/">
-                <img src={'/assets/logo.png'} width={'150px'} alt="" />
+                <img
+                  src={'/assets/logo.png'}
+                  width={'150px'}
+                  alt=""
+                  className="mix-blend-difference"
+                />
               </Link>
               <Link
                 href="/youtube"
@@ -20,135 +25,50 @@ const Footer = () => {
                 <FaYoutube className="text-center" />
               </Link>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4 text-left">
-              <h2 className="text-[17px] bold text-white tracking-widest mb-2">
-                Company
-              </h2>
-              <nav className="list-none mb-10">
-                <li>
-                  <Link
-                    href="/"
-                    className="text-white hover:text-gray-300 cursor-pointer"
-                  >
-                    Consulting
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/"
-                    className="text-white hover:text-gray-300 cursor-pointer"
-                  >
-                    careers
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/"
-                    className="text-white hover:text-gray-300 cursor-pointer"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/"
-                    className="text-white hover:text-gray-300 cursor-pointer"
-                  >
-                    Success Stories
-                  </Link>
-                </li>
-              </nav>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4 text-left">
-              <h2 className="font-bold text-white tracking-widest text-[17px] mb-2">
-                Professional Services
-              </h2>
-              <nav className="list-none mb-10">
-                <li>
-                  <Link
-                    href="/"
-                    className="text-white hover:text-gray-300 cursor-pointer"
-                  >
-                    Application Development
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/"
-                    className="text-white hover:text-gray-300 cursor-pointer"
-                  >
-                    Software Development
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/"
-                    className="text-white hover:text-gray-300 cursor-pointer"
-                  >
-                    Front-End Development
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/"
-                    className="text-white hover:text-gray-300 cursor-pointer"
-                  >
-                    Back-End Development
-                  </Link>
-                </li>
-              </nav>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4 text-left">
-              <h2 className="title-font font-bold text-white tracking-widest text-[17px] mb-2">
-                Zafron University
-              </h2>
-              <nav className="list-none mb-10">
-                <li>
-                  <Link
-                    href="/courses"
-                    className="text-white hover:text-gray-300 cursor-pointer"
-                  >
-                    Course Training
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/certificate"
-                    className="text-white hover:text-gray-300 cursor-pointer"
-                  >
-                    Certification Completion
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/placement"
-                    className="text-white hover:text-gray-300 cursor-pointer"
-                  >
-                    Paid Placement Support
-                  </Link>
-                </li>
-              </nav>
-            </div>
+            {itemArray.map((item, index) => (
+              <div
+                key={index}
+                className="lg:w-1/4 md:w-1/2 w-full px-4 text-left"
+              >
+                <h2 className="text-4 bold text-white tracking-widest mb-2">
+                  {item.title}
+                </h2>
+                <nav className="list-none mb-10">
+                  {item.items.map((subItem, index) => (
+                    <li key={index}>
+                      <Link
+                        href={subItem.link}
+                        className="text-white hover:text-gray-300 cursor-pointer"
+                      >
+                        {subItem.title}
+                      </Link>
+                    </li>
+                  ))}
+                </nav>
+              </div>
+            ))}
           </div>
         </div>
         <hr />
         <div>
           <div className="container mx-auto py-4 lg:px-[140px] flex flex-wrap flex-col sm:flex-row">
             <p className="text-white text-sm text-center sm:text-left">
-              Copyright © 2023
+              Copyright © {new Date().getFullYear()}
               <Link href="/" className="text-white ml-1 open-sans bold">
                 Zafron Technology
               </Link>
             </p>
-            <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-              <Link href="/terms" className="text-white">
-                Term of Use ||
-              </Link>
 
-              <Link href="/policy" className="ml-3 text-white">
-                Privacy policy ||
+            <span className="flex gap-2 sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <Link href="/terms" className="text-white">
+                Term of Use
               </Link>
-              <Link href="/sitemap" className="ml-3 text-white">
+              <span>{'|'}</span>
+              <Link href="/policy" className="text-white">
+                Privacy policy
+              </Link>
+              <span>{'|'}</span>
+              <Link href="/sitemap" className="text-white">
                 Site Map
               </Link>
             </span>
@@ -160,3 +80,79 @@ const Footer = () => {
 };
 
 export default Footer;
+
+const itemArray = [
+  {
+    id: 1,
+    title: 'Company',
+    items: [
+      {
+        id: 1,
+        title: 'Consulting',
+        link: '/consulting',
+      },
+      {
+        id: 2,
+        title: 'Careers',
+        link: '/careers',
+      },
+      {
+        id: 3,
+        title: 'About',
+        link: '/about',
+      },
+      {
+        id: 4,
+        title: 'Success Stories',
+        link: '/',
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: 'Professional Services',
+    items: [
+      {
+        id: 1,
+        title: 'Application Development',
+        link: '/',
+      },
+      {
+        id: 2,
+        title: 'Software Development',
+        link: '/',
+      },
+      {
+        id: 3,
+        title: 'Front-End Development',
+        link: '/',
+      },
+      {
+        id: 4,
+        title: 'Back-End Development',
+        link: '/',
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: 'Zafron University',
+    items: [
+      {
+        id: 1,
+        title: 'Course Training',
+        link: '/courses',
+      },
+      {
+        id: 2,
+        title: 'Certification Completion',
+        link: '/certificate',
+      },
+      {
+        id: 3,
+        title: 'Paid Placement Support',
+        link: '/placement',
+      },
+    ],
+  },
+];

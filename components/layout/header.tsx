@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 // import logo from '../../assets/logo.png';
 import { FaAngleDown } from 'react-icons/fa';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -21,7 +22,13 @@ const Header = () => {
             <div className="flex items-center">
               <div className="flex-shrink-0 text-white font-bold">
                 <Link href="/">
-                  <img src={'/assets/logo.png'} width={'150px'} alt="" />
+                  <Image
+                    src={'/assets/logo.png'}
+                    width={150}
+                    height={50}
+                    alt="logo"
+                    className="mix-blend-difference"
+                  />
                 </Link>
               </div>
             </div>

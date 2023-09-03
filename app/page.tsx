@@ -10,7 +10,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import ZafronUniversity from '@/components/University/ZafronUniversity';
 import Image from 'next/image';
 
-const Slides = () => {
+const HomePage = () => {
   const progressCircle = useRef<React.SVGProps<SVGSVGElement> & { style: any }>(
     null
   );
@@ -47,9 +47,13 @@ const Slides = () => {
               <Image
                 alt="content"
                 className="object-cover object-center"
-                src={'/assets/Zafronunivrsity.jpg'}
-                height={737}
-                width={1257}
+                src={'/assets/zafronuniversity.jpg'}
+                height={737 / 1.2}
+                width={1257 / 1.2}
+                style={{
+                  width: '100%',
+                  // maxHeight: '100vh',
+                }}
               />
             </div>
           </div>
@@ -70,4 +74,4 @@ const Slides = () => {
   );
 };
 
-export default Slides;
+export default HomePage;

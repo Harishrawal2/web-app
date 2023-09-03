@@ -21,74 +21,30 @@ const Testimonial = () => {
         </div>
 
         <div className="container px-5 mx-auto text-white">
-          <div className="flex flex-wrap">
-            <div className="lg:w-1/3 lg:mb-0 mb-4 p-4 ">
-              <div className="h-full text-center bg-gray-400 rounded-[20px]">
-                <Image
-                  alt="testimonial"
-                  className="w-[120px] h-[120px] mb-2 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                  src={'/assets/user1.jpg'}
-                  height={120}
-                  width={120}
-                />
-                <p className="leading-relaxed lg:p-6 text-md lg:text:lg lg:text-justify">
-                  <span className="text-green-800">""</span> As Zafron
-                  University's software development program student, I was
-                  amazed by the quality of education I received. The instructors
-                  were not only knowledgeable but also approachable. The
-                  practical assignments were particularly valuable in sharpening
-                  my coding skills.
-                  <span className="text-green-800">""</span>
-                </p>
-                <h2 className="text-gray-900 font-medium text-xl lg:ml-[120px] mb-10">
-                  HOLDEN CAULFIELD
-                </h2>
-              </div>
-            </div>
-            <div className="lg:w-1/3 lg:mb-0 mb-6 p-4 ">
-              <div className="h-full text-center bg-gray-400 rounded-[20px]">
-                <Image
-                  alt="testimonial"
-                  className="w-[120px] h-[120px] mb-2 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                  src={'/assets/user2.jpg'}
-                  height={120}
-                  width={120}
-                />
-                <p className="leading-relaxed lg:p-6 text-md lg:text:lg lg:text-justify">
-                  <span className="text-green-800">""</span> I can't express how
-                  impressed I am with their customized development. Our team's
-                  productivity has skyrocketed, and we've seen a significant
-                  gain in process optimization. Improved workflow efficiency has
-                  translated into substantial sales growth.
-                  <span className="text-green-800">""</span>
-                </p>
-                <h2 className="text-gray-900 font-medium text-xl lg:ml-[120px] mb-10">
-                  ALPER KAMU
-                </h2>
-              </div>
-            </div>
-            <div className="lg:w-1/3 lg:mb-0 p-4">
-              <div className="h-full text-center bg-gray-400 rounded-[20px]">
-                <Image
-                  alt="testimonial"
-                  className="w-[120px] h-[120px] mb-2 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                  src={'/assets/user3.jpg'}
-                  height={120}
-                  width={120}
-                />
-                <p className="leading-relaxed lg:p-6 text-md lg:text:lg lg:text-justify">
-                  <span className="text-green-800">""</span>I can't recommend
-                  Zafron University's software development courses enough! The
-                  curriculum included the latest industry trends and an
-                  interactive learning platform. The hands-on projects and
-                  real-world simulations gave me the practical skills.
-                  <span className="text-green-800">""</span>
-                </p>
-                <h2 className="text-gray-900 font-medium text-xl lg:ml-[120px] mb-10">
-                  HENRY LETHAM
-                </h2>
-              </div>
-            </div>
+          <div className="flex flex-wrap mb-4">
+            {array.map((item, index) => {
+              return (
+                <div className="lg:w-1/3 lg:mb-0 mb-4 lg:p-4" key={index}>
+                  <div className=" lg:p-4 h-full text-center bg-gray-400 rounded-[20px]">
+                    <Image
+                      alt="testimonial"
+                      className="w-[120px] h-[120px] mb-2 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                      src={item.image}
+                      height={180}
+                      width={180}
+                    />
+                    <p className="leading-relaxed lg:p-6 text-md lg:text:lg lg:text-justify">
+                      <span className="text-green-800">""</span>
+                      {item.text}
+                      <span className="text-green-800">""</span>
+                    </p>
+                    <h2 className="text-gray-900 font-medium text-xl mb-10">
+                      {item.name}
+                    </h2>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -97,3 +53,21 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
+
+const array = [
+  {
+    name: 'Holden Caulfield',
+    image: '/assets/user1.jpg',
+    text: "As Zafron University's software development program student, I was amazed by the quality of education I received. The instructors were not only knowledgeable but also approachable. The practical assignments were particularly valuable in sharpening my coding skills.",
+  },
+  {
+    name: 'Alper Kamu',
+    image: '/assets/user2.jpg',
+    text: "I can't express how impressed I am with their customized development. Our team's productivity has skyrocketed, and we've seen a significant gain in process optimization. Improved workflow efficiency has translated into substantial sales growth.",
+  },
+  {
+    name: 'Henry Letham',
+    image: '/assets/user3.jpg',
+    text: "I can't recommend Zafron University's software development courses enough! The curriculum included the latest industry trends and an interactive learning platform. The hands-on projects and real-world simulations gave me the practical skills.",
+  },
+];

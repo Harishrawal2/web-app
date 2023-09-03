@@ -33,11 +33,11 @@ const JobList = () => {
               </h1>
               <Link
                 href="/apply"
-                className="xl:text-3xl lg:text-3xl text-xl flex font-semibold"
+                className="flex items-center text-base flex font-semibold"
               >
-                <button onClick={() => handleClick(job)} className="flex">
-                  Apply <FiArrowUpRight />
-                </button>
+                {/* <button onClick={() => handleClick(job)} className="flex"> */}
+                Apply <FiArrowUpRight />
+                {/* </button> */}
               </Link>
             </div>
             <p className="xl:text-xl lg:text-xl text-md py-3">

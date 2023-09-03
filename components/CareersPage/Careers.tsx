@@ -12,8 +12,14 @@ const Careers = () => {
           <Image
             src={'/assets/hiring.jpg'}
             alt="Hiring"
-            width={1920}
-            height={1080}
+            width={1920 / 2}
+            height={1080 / 2}
+            style={{
+              objectFit: 'cover',
+              objectPosition: 'center',
+              width: '100%',
+              maxHeight: '100vh',
+            }}
           />
         </div>
         <div className="open-sans max-w-7xl mx-auto px-4">
@@ -33,10 +39,6 @@ const Careers = () => {
               </p>
 
               <div className="py-5 flex gap-4 flex-wrap">
-                <button className="ring-2  rounded-full ring-gray-900 text-xl px-5 py-2 font-medium bg-gray-900 text-white transition duration-150 ease-out hover:ease-in">
-                  View all
-                </button>
-
                 <button className="ring-2 rounded-full ring-gray-900 text-xl px-5 py-2 font-medium hover:bg-gray-900 hover:text-white transition duration-150 ease-out hover:ease-in">
                   Development
                 </button>
@@ -71,6 +73,9 @@ const Careers = () => {
                 >
                   Not Listed
                 </Link>
+                <button className="ring-2  rounded-full ring-gray-900 text-xl px-5 py-2 font-medium bg-gray-900 text-white transition duration-150 ease-out hover:ease-in">
+                  View all
+                </button>
               </div>
             </div>
             <hr className="borderStyle mt-10 -mb-10" />
