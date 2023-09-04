@@ -8,10 +8,10 @@ const ZTechnology = () => {
       <div className="text-gray-600 body-font">
         <div className="container px-5 py-18 mx-auto">
           <div className="flex flex-col text-center w-full">
-            <h1 className="lg:text-4xl text-2xl font-medium title-font text-gray-900 uppercase bold">
+            <h1 className="lg:text-4xl text-2xl font-bold tracking-wide title-font text-gray-900 uppercase bold">
               Zafron Technology
             </h1>
-            <p className="lg:w-1/2 mx-auto text-md lg:text-lg leading-relaxed lg:text-justify">
+            <p className="lg:w-1/2 mx-auto text-xl text-gray-500 leading-relaxed">
               Zafron Technology is reshaping the way businesses interact with
               the digital sphere.
             </p>

@@ -33,7 +33,7 @@ const JobList = () => {
               </h1>
               <Link
                 href="/apply"
-                className="flex items-center text-base flex font-semibold"
+                className="flex items-center text-2xl font-semibold"
               >
                 {/* <button onClick={() => handleClick(job)} className="flex"> */}
                 Apply <FiArrowUpRight />

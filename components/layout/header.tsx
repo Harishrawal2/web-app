@@ -47,9 +47,8 @@ const Header = () => {
                   </button>
 
                   <div
-                    className={`absolute xl:w-[1100px] md:w-96 xl:py-10 bg-white border border-gray-300 divide-x divide-gray-200 rounded-md shadow-lg grid xl:grid-cols-3 text-left ${
-                      isDropdownOpen ? 'block' : 'hidden'
-                    }`}
+                    className={`absolute xl:w-[1100px] md:w-96 xl:py-10 bg-white border border-gray-300 divide-x divide-gray-200 rounded-md shadow-lg grid xl:grid-cols-3 text-left ${isDropdownOpen ? 'block' : 'hidden'
+                      }`}
                   >
                     <div>
                       <Link
@@ -110,9 +109,8 @@ const Header = () => {
                   </button>
 
                   <div
-                    className={`absolute z-10 w-96 bg-white py-10 border border-gray-300 divide-x divide-gray-200 rounded-md shadow-lg grid grid-cols-2 text-left ${
-                      isDropdownOpen2 ? 'block' : 'hidden'
-                    }`}
+                    className={`absolute z-10 w-96 bg-white py-10 border border-gray-300 divide-x divide-gray-200 rounded-md shadow-lg grid grid-cols-2 text-left ${isDropdownOpen2 ? 'block' : 'hidden'
+                      }`}
                   >
                     <div>
                       <Link
@@ -194,9 +192,8 @@ const Header = () => {
                 </button>
 
                 <div
-                  className={`absolute z-10 mt-2 w-80 bg-white border border-gray-300 divide-y divide-gray-200 rounded-md shadow-lg  ${
-                    isDropdownOpen ? 'block' : 'hidden'
-                  }`}
+                  className={`absolute z-10 mt-2 w-80 bg-white border border-gray-300 divide-y divide-gray-200 rounded-md shadow-lg  ${isDropdownOpen ? 'block' : 'hidden'
+                    }`}
                 >
                   <div className="py-1">
                     <Link
@@ -251,9 +248,8 @@ const Header = () => {
                 </button>
 
                 <div
-                  className={`absolute z-10 mt-2 w-80 bg-white border border-gray-300 divide-y divide-gray-200 rounded-md shadow-lg ${
-                    isDropdownOpen2 ? 'block' : 'hidden'
-                  }`}
+                  className={`absolute z-10 mt-2 w-80 bg-white border border-gray-300 divide-y divide-gray-200 rounded-md shadow-lg ${isDropdownOpen2 ? 'block' : 'hidden'
+                    }`}
                 >
                   <div className="py-1">
                     <Link

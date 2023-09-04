@@ -4,7 +4,7 @@ import JobData from "./JobsData.json";
 const JobDetails = () => {
   return (
     <>
-      <div className="container px-5 py-16 mx-auto -mb-20">
+      <div className="container px-5 py-16 mx-auto">
         <h1 className="text-3xl">Jobs Details</h1>
         {JobData.map((job) => (
           <div key={job.id}>
@@ -12,14 +12,16 @@ const JobDetails = () => {
               {job.jobTitle}
             </h1>
             <p>{job.jobDescription}</p>
-            <p className="xl:text-[20px] lg:text-md xl:text-lg text-sm ">
-              <span>Experience :</span>
-              {job.jobExperience}
-            </p>
-            <p>
-              Package: {job.jobPackge} |
-              <span> Education: {job.jobEducation}</span>
-            </p>
+            <div className="flex text-[12px] gap-2">
+              <p>
+                <span>Experience :</span>
+                {job.jobExperience} |
+              </p>
+              <p>
+                Package: {job.jobPackge} |
+                <span> Education: {job.jobEducation}</span>
+              </p>
+            </div>
           </div>
         ))}
       </div>

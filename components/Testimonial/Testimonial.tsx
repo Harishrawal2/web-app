@@ -7,15 +7,13 @@ const Testimonial = () => {
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-20 mx-auto">
           <div className="flex flex-col text-center w-full">
-            <h1 className="lg:text-4xl text-3xl font-medium title-font text-gray-900 uppercase bold">
+            <h1 className="lg:text-4xl text-3xl font-bold title-font text-gray-900 uppercase bold">
               Testimonial
             </h1>
-            <p className="lg:w-1/2 mx-auto lg:text-lg text-md leading-relaxed lg:text-justify">
-              Discover the voices and stories that illuminate the path we've
-              paved in the world of software development. Behind each
-              testimonial is a story of discovery – of conquering hurdles,
-              embracing uncertainties, and turning dreams into lines of code
-              that change the world.
+            <p className="lg:w-1/2 text-gray-500 mx-auto text-xl leading-relaxed">
+              We revolutionized the way digital copies of cards were uploaded,
+              transforming a time-consuming process into a blazing-fast
+              accomplishment.
             </p>
           </div>
         </div>

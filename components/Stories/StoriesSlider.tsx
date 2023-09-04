@@ -33,15 +33,15 @@ const Slider = () => {
           <div className="p-2">
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <Image
-                className="lg:h-48 md:h-36 w-full object-cover object-center"
+                className="lg:h-72 md:h-36 w-full object-cover object-center"
                 src={'/assets/story/story1.jpg'}
                 alt="blog"
                 height={200 * 2}
                 width={200 * 2}
               />
               <div className="p-6">
-                <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                  Bringing Ideas To Life Through Code{' '}
+                <h1 className="title-font text-md font-medium text-gray-900 mb-3">
+                  App Performance increased from 45 Secs to 0.001 Secs{" "}
                 </h1>
                 <p className="leading-relaxed mb-3">
                   Witness aspiring coders evolve into proficient developers and
@@ -50,7 +50,7 @@ const Slider = () => {
                 <div className="flex items-center flex-wrap ">
                   <Link
                     href="/"
-                    className="text-gray-500 inline-flex items-center md:mb-2 lg:mb-0"
+                    className="text-gray-500 inline-flex items-center md:mb-2 lg:mb-0 hover:text-gray-900"
                   >
                     Read More
                     <svg
@@ -79,14 +79,14 @@ const Slider = () => {
           <div className="p-2">
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <Image
-                className="lg:h-48 md:h-36 w-full object-cover object-center"
-                src={'/assets/story/story3.jpg'}
+                className="lg:h-72 md:h-36 w-full object-cover object-center"
+                src={'/assets/story/story2.jpg'}
                 alt="blog"
                 height={200 * 2}
                 width={200 * 2}
               />
               <div className="p-6">
-                <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                <h1 className="title-font text-md font-medium text-gray-900 mb-3">
                   A vision for streamlined efficiency{' '}
                 </h1>
                 <p className="leading-relaxed mb-3">
@@ -96,7 +96,7 @@ const Slider = () => {
                 <div className="flex items-center flex-wrap ">
                   <Link
                     href="/"
-                    className="text-gray-500 inline-flex items-center md:mb-2 lg:mb-0"
+                    className="text-gray-500 inline-flex items-center md:mb-2 lg:mb-0 hover:text-gray-900"
                   >
                     Read More
                     <svg
@@ -125,14 +125,14 @@ const Slider = () => {
           <div className="p-2">
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <Image
-                className="lg:h-48 md:h-36 w-full object-cover object-center"
-                src={'/assets/story/story2.jpg'}
+                className="lg:h-72 md:h-36 w-full object-cover object-center"
+                src={'/assets/story/story3.jpg'}
                 alt="blog"
                 height={200 * 2}
                 width={200 * 2}
               />
               <div className="p-6">
-                <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                <h1 className="title-font text-md font-medium text-gray-900 mb-3">
                   Short of extraordinary.{' '}
                 </h1>
                 <p className="leading-relaxed mb-3">
@@ -142,7 +142,7 @@ const Slider = () => {
                 <div className="flex items-center flex-wrap ">
                   <Link
                     href="/"
-                    className="text-gray-500 inline-flex items-center md:mb-2 lg:mb-0"
+                    className="text-gray-500 inline-flex items-center md:mb-2 lg:mb-0 hover:text-gray-900"
                   >
                     Read More
                     <svg

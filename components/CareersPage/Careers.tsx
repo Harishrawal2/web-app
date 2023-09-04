@@ -4,6 +4,7 @@ import JobList from './JobList';
 import Link from 'next/link';
 import Image from 'next/image';
 
+
 const Careers = () => {
   return (
     <>
