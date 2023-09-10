@@ -148,7 +148,7 @@ const Header = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <div className="relative group">
-                <Link href='/'>
+                <Link href='/courses'>
                   <li
                     className="text-gray-900 px-3 py-2 open-sans flex items-center gap-1 text-xl"
                   >
@@ -170,13 +170,17 @@ const Header = () => {
                     Portfolio
                   </li>
                 </Link>
-                <Link href='/'>
+                <Link href='/contact'>
                   <li
                     className="text-gray-900 px-3 py-2 open-sans flex items-center gap-1 text-xl"
                   >
                     Contact
                   </li>
                 </Link>
+                <div className="flex flex-row md:flex-row items-center justify-around">
+                  <Link href="/login" className="inline-flex items-center py-2 px-3 font-semibold bg-yellow-500 shadow-lg shadow-yellow-500/50 rounded-[25px] text-lg text-white mt-4 md:mt-0">Login <FiLogIn /></Link>
+                  <button className="inline-flex items-center py-2 px-3 bg-green-500 shadow-lg shadow-green-500/50 rounded-[25px] text-white text-lg mt-4 md:mt-0">Dashboard <MdDashboardCustomize /></button>
+                </div>
               </div>
 
             </div>

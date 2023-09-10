@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "img": "/mern.jpg",
+    "category": "Development",
+    "title": "Full Stack Development",
+    "description": "Learn HTML, CSS, and JavaScript Front-End Development and Back-End Development Nodejs, Express and MongoDB NoSQL Database Live classes"
+  },
+  {
+    "id": 2,
+    "img": "/frontend.png",
+    "category": "Development",
+    "title": "Front-End Development",
+    "description": "Learn HTML, CSS, JavaScript, Reactjs and NextJS Framework Front-End Development Live classes"
+  },
+  {
+    "id": 3,
+    "img": "/backend.png",
+    "category": "Development",
+    "title": "Back-End Development",
+    "description": "Learn JavaScript, NodeJS, Express, and MongoDB Back-End Development Live classes"
+  }
+]

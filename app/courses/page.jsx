@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
 import CourseProcess from "../../components/Sections/Process/CourseProcess";
+import CourseSection from "../../components/Sections/Courses/CourseSection";
 
 const CoursesPage = () => {
   return (
-    <div>
+    <div className="max-w-7xl mx-auto px-4">
+      <CourseSection />
       <CourseProcess />
     </div>
   );
