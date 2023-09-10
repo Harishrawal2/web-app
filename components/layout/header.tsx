@@ -1,8 +1,10 @@
+'use client'
 import React, { useState } from 'react';
-// import logo from '../../assets/logo.png';
-import { FaAngleDown } from 'react-icons/fa';
 import Link from 'next/link';
-import Image from 'next/image';
+import { BiCodeBlock } from 'react-icons/bi'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import { FiLogIn } from 'react-icons/fi'
+import { MdDashboardCustomize } from 'react-icons/md'
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,24 +13,18 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
 
   return (
     <>
-      <nav className="bg-gray-900 open-sans sticky top-0 z-40">
+      <nav className="bg-white text-gray-900 open-sans sticky top-0 z-40 bg-gradient-to-r from-blue-100 via-purple-50 to-pink-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 text-white font-bold">
-                <Link href="/">
-                  <Image
-                    src={'/assets/logo.png'}
-                    width={150}
-                    height={50}
-                    alt="logo"
-                    className="mix-blend-difference"
-                  />
+                <Link href="/" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                  <BiCodeBlock className="text-4xl rounded-[14px] bg-indigo-500 shadow-lg shadow-indigo-500/100" />
+                  <p className="ml-3 text-3xl font-sans shadow-indigo-500/50 font-bold text-shadow-2xl text-indigo-500 logo">Revise <span className='text-gray-900 logo2'>Study</span></p>
                 </Link>
               </div>
             </div>
@@ -36,125 +32,99 @@ const Header = () => {
             <div className="hidden md:block">
               <div className="space-x-8 flex items-center">
                 <div
-                  className="relative group"
-                  onMouseLeave={() => setIsDropdownOpen(false)}
-                  dir="rtl"
-                >
-                  <button onMouseOver={() => setIsDropdownOpen(true)}>
-                    <li className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-xl open-sans flex items-center gap-1">
-                      Services
-                    </li>
-                  </button>
-
-                  <div
-                    className={`absolute xl:w-[1100px] md:w-96 xl:py-10 bg-white border border-gray-300 divide-x divide-gray-200 rounded-md shadow-lg grid xl:grid-cols-3 text-left ${isDropdownOpen ? 'block' : 'hidden'
-                      }`}
-                  >
-                    <div>
-                      <Link
-                        href="/app/services"
-                        className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                      >
-                        Application Development & Support
-                      </Link>
-                      <Link
-                        href="/cloud-services"
-                        className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                      >
-                        Cloud Services
-                      </Link>
-                    </div>
-
-                    <div>
-                      <Link
-                        href="/services"
-                        className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                      >
-                        Professional / Staffing
-                      </Link>
-                      <Link
-                        href="/infrastructure"
-                        className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                      >
-                        Infrastructure Setup
-                      </Link>
-                    </div>
-
-                    <div>
-                      <Link
-                        href="/consulting"
-                        className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                      >
-                        Consulting
-                      </Link>
-
-                      <Link
-                        href="/domain-expert"
-                        className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                      >
-                        Domain Expertise
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div
                   dir="rtl"
                   className="relative group"
                   onMouseLeave={() => setIsDropdownOpen2(false)}
                 >
                   <button onMouseOver={() => setIsDropdownOpen2(true)}>
-                    <li className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-xl open-sans flex items-center gap-1">
-                      Insight
+                    <li className="text-gray-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl open-sans flex items-center gap-1">
+                      <Link href='/courses'>
+                        Courses
+                      </Link>
                     </li>
                   </button>
 
                   <div
-                    className={`absolute z-10 w-96 bg-white py-10 border border-gray-300 divide-x divide-gray-200 rounded-md shadow-lg grid grid-cols-2 text-left ${isDropdownOpen2 ? 'block' : 'hidden'
+                    className={`absolute z-10 w-[600px] bg-white py-5 border border-gray-300 divide-x divide-gray-200 rounded-md shadow-lg grid grid-cols-2 text-left ${isDropdownOpen2 ? 'block' : 'hidden'
                       }`}
                   >
                     <div>
                       <Link
-                        href="/about"
+                        href="/"
                         className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
                       >
-                        About Us
+                        Full Stack Web Development
                       </Link>
                       <Link
-                        href="/stories"
+                        href="/"
                         className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
                       >
-                        Success Stories
+                        Front-End Development
                       </Link>
                       <Link
-                        href="/industry"
+                        href="/"
                         className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
                       >
-                        Industries
+                        Back-End Development
+                      </Link>
+                      <Link
+                        href="/"
+                        className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
+                      >
+                        MERN Stack Development
                       </Link>
                     </div>
                     <div>
                       <Link
-                        href="/university"
+                        href="/"
                         className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
                       >
-                        University{' '}
+                        Git & Github
                       </Link>
                       <Link
-                        href="/contact"
+                        href="/"
                         className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
                       >
-                        Contact Us
+                        Advance JavaScript
                       </Link>
 
                       <Link
-                        href="/careers"
+                        href="/"
                         className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
                       >
-                        Careers{' '}
+                        React + NextJS
+                      </Link>
+                      <Link
+                        href="/careers"
+                        className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
+                      >NodeJS
                       </Link>
                     </div>
                   </div>
                 </div>
+
+                <li className="text-gray-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl open-sans flex items-center">
+                  <Link href='/'>
+                    Projects
+                  </Link>
+                </li>
+                <li className="text-gray-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl open-sans flex items-center">
+                  <Link href='/'>
+                    Portfolio
+                  </Link>
+                </li>
+
+                <li className="text-gray-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl open-sans flex items-center">
+                  <Link href='/contact'>
+                    Contact Us
+                  </Link>
+                </li>
+
+                <div className="flex flex-row md:flex-row items-center justify-between gap-4">
+                  <Link href="/login" className="inline-flex items-center py-2 px-3 font-semibold bg-yellow-500 shadow-lg shadow-yellow-500/50 rounded-[25px] text-lg text-white mt-4 md:mt-0">Login <FiLogIn /></Link>
+                  <button className="inline-flex items-center py-2 px-3 bg-green-500 shadow-lg shadow-green-500/50 rounded-[25px] text-white text-lg mt-4 md:mt-0">Dashboard <MdDashboardCustomize /></button>
+                </div>
+
               </div>
             </div>
 
@@ -162,21 +132,14 @@ const Header = () => {
             <div className="md:hidden">
               <button
                 onClick={toggleMobileMenu}
-                className="p-2 inline-flex items-center justify-center text-gray-400 hover:text-white focus:outline-none"
+                className="p-2 inline-flex items-center justify-center text-gray-900 hover:text-gray-900 focus:outline-none text-2xl"
               >
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
+
+                {isMobileMenuOpen ? (
+                  <AiOutlineClose />
+                ) : (
+                  <AiOutlineMenu />
+                )}
               </button>
             </div>
           </div>
@@ -184,114 +147,38 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <div className="relative group ">
-                <button onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
-                  <li className="text-white px-3 py-2 rounded-md text-lg open-sans flex items-center gap-1">
-                    Services <FaAngleDown />
-                  </li>
-                </button>
-
-                <div
-                  className={`absolute z-10 mt-2 w-80 bg-white border border-gray-300 divide-y divide-gray-200 rounded-md shadow-lg  ${isDropdownOpen ? 'block' : 'hidden'
-                    }`}
-                >
-                  <div className="py-1">
-                    <Link
-                      href="/app/services"
-                      className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                    >
-                      Application Development & Support
-                    </Link>
-
-                    <Link
-                      href="/cloud-services"
-                      className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                    >
-                      Cloud Services
-                    </Link>
-                    <Link
-                      href="/infrastructure"
-                      className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                    >
-                      Infrastructure Setup
-                    </Link>
-                    <Link
-                      href="/services"
-                      className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                    >
-                      Professional / Staffing
-                    </Link>
-                    <Link
-                      href="/consulting"
-                      className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                    >
-                      Consulting
-                    </Link>
-
-                    <Link
-                      href="/domian-expert"
-                      className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                    >
-                      Domain Expertise
-                    </Link>
-                  </div>
-                </div>
-              </div>
               <div className="relative group">
-                <button onClick={() => setIsDropdownOpen2(!isDropdownOpen2)}>
+                <Link href='/'>
                   <li
-                    // href="/insights"
-                    className="text-white px-3 py-2 text-lg open-sans flex items-center gap-1"
+                    className="text-gray-900 px-3 py-2 open-sans flex items-center gap-1 text-xl"
                   >
-                    Insight <FaAngleDown />
+                    Courses
                   </li>
-                </button>
+                </Link>
+                <Link href='/'>
+                  <li
+                    className="text-gray-900 px-3 py-2 open-sans flex items-center gap-1 text-xl"
+                  >
+                    Projects
+                  </li>
+                </Link>
 
-                <div
-                  className={`absolute z-10 mt-2 w-80 bg-white border border-gray-300 divide-y divide-gray-200 rounded-md shadow-lg ${isDropdownOpen2 ? 'block' : 'hidden'
-                    }`}
-                >
-                  <div className="py-1">
-                    <Link
-                      href="/about"
-                      className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                    >
-                      About Us
-                    </Link>
-                    <Link
-                      href="/stories"
-                      className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                    >
-                      Success Stories
-                    </Link>
-                    <Link
-                      href="/industry"
-                      className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                    >
-                      Industries
-                    </Link>
-                    <Link
-                      href="/university"
-                      className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                    >
-                      University{' '}
-                    </Link>
-                    <Link
-                      href="/contact"
-                      className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                    >
-                      Contact Us
-                    </Link>
-
-                    <Link
-                      href="/careers"
-                      className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100"
-                    >
-                      Careers{' '}
-                    </Link>
-                  </div>
-                </div>
+                <Link href='/'>
+                  <li
+                    className="text-gray-900 px-3 py-2 open-sans flex items-center gap-1 text-xl"
+                  >
+                    Portfolio
+                  </li>
+                </Link>
+                <Link href='/'>
+                  <li
+                    className="text-gray-900 px-3 py-2 open-sans flex items-center gap-1 text-xl"
+                  >
+                    Contact
+                  </li>
+                </Link>
               </div>
+
             </div>
           </div>
         )}
