@@ -4,8 +4,8 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title:
-    'University, Technology Services, Staffing and Consulting | Zafron Technology',
-  description: 'University, Technology Services, Staffing and Consulting | Zafron Technology',
+    'Revise Study | IT Courses | Full Stack Development course | Interview Preparation ',
+  description: 'Revise Study | IT Courses | Full Stack Development course | Freelancing',
 };
 
 export default function RootLayout({
