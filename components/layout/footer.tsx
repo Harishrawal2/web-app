@@ -1,158 +1,37 @@
+"use client"
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import React from 'react';
-import { FaYoutube } from 'react-icons/fa';
+import { BiCodeBlock } from 'react-icons/bi';
 
 const Footer = () => {
   return (
-    <div className="bg-gray-900 text-white">
-      <footer className="text-white body-font ">
-        <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-          <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-center text-center">
-            <div className="lg:w-1/4 md:w w-full lg:px-12">
-              <Link href="/">
-                <img
-                  src={'/assets/logo.png'}
-                  width={'150px'}
-                  alt=""
-                  className="mix-blend-difference"
-                />
-              </Link>
-              <Link
-                href="/youtube"
-                className="text-red-500 text-6xl text-center"
-              >
-                <FaYoutube className="text-center" />
-              </Link>
-            </div>
-            {itemArray.map((item, index) => (
-              <div
-                key={index}
-                className="lg:w-1/4 md:w-1/2 w-full px-4 text-left"
-              >
-                <h2 className="text-4 bold text-white tracking-widest mb-2">
-                  {item.title}
-                </h2>
-                <nav className="list-none mb-10">
-                  {item.items.map((subItem, index) => (
-                    <li key={index}>
-                      <Link
-                        href={subItem.link}
-                        className="text-white hover:text-gray-300 cursor-pointer"
-                      >
-                        {subItem.title}
-                      </Link>
-                    </li>
-                  ))}
-                </nav>
-              </div>
-            ))}
-          </div>
-        </div>
-        <hr />
+    <footer className="text-gray-600 body-font">
+      <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <div>
-          <div className="container mx-auto py-4 lg:px-[140px] flex flex-wrap flex-col sm:flex-row">
-            <p className="text-white text-sm text-center sm:text-left">
-              Copyright © {new Date().getFullYear()}
-              <Link href="/" className="text-white ml-1 open-sans bold">
-                Zafron Technology
-              </Link>
-            </p>
-
-            <span className="flex gap-2 sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-              <Link href="/terms" className="text-white">
-                Term of Use
-              </Link>
-              <span>{'|'}</span>
-              <Link href="/policy" className="text-white">
-                Privacy policy
-              </Link>
-              <span>{'|'}</span>
-              <Link href="/sitemap" className="text-white">
-                Site Map
-              </Link>
-            </span>
-          </div>
+          <Link href='/' className="flex title-font font-medium items-center text-gray-900">
+            <BiCodeBlock className='text-3xl rounded-[14px] bg-indigo-500 shadow-lg shadow-indigo-500/100' />
+            <p className="ml-3 text-2xl font-sans shadow-indigo-500/50 font-bold text-shadow-2xl text-indigo-500 logo">Revise <span className='text-gray-900 logo2'>Study</span></p>
+          </Link>
         </div>
-      </footer>
-    </div>
+        <p className="text-lg text-gray-500 font-medium sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0">Copyright
+          <Link href="/" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank"> &#169; 2023</Link>
+        </p>
+
+        <span className="inline-flex sm:ml-auto sm:mt-0 justify-center sm:justify-start xl:text-xl lg:text-lg md:text-md font-medium gap-1">
+          <Link href='/' className="xl:ml-3 lg:ml-0 ml-0 text-gray-500">
+            About Us ||
+          </Link>
+          <Link href='/' className="xl:ml-3 lg:ml-0 ml-0 text-gray-500">
+            Terms and Conditions ||
+          </Link>
+          <Link href='/' className="xl:ml-3 lg:ml-0 ml-0 text-gray-500">
+            Privacy Policy
+          </Link>
+        </span>
+      </div>
+    </footer>
   );
 };
 
 export default Footer;
-
-const itemArray = [
-  {
-    id: 1,
-    title: 'Company',
-    items: [
-      {
-        id: 1,
-        title: 'Consulting',
-        link: '/consulting',
-      },
-      {
-        id: 2,
-        title: 'Careers',
-        link: '/careers',
-      },
-      {
-        id: 3,
-        title: 'About',
-        link: '/about',
-      },
-      {
-        id: 4,
-        title: 'Success Stories',
-        link: '/',
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: 'Professional Services',
-    items: [
-      {
-        id: 1,
-        title: 'Application Development',
-        link: '/',
-      },
-      {
-        id: 2,
-        title: 'Software Development',
-        link: '/',
-      },
-      {
-        id: 3,
-        title: 'Front-End Development',
-        link: '/',
-      },
-      {
-        id: 4,
-        title: 'Back-End Development',
-        link: '/',
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: 'Zafron University',
-    items: [
-      {
-        id: 1,
-        title: 'Course Training',
-        link: '/courses',
-      },
-      {
-        id: 2,
-        title: 'Certification Completion',
-        link: '/certificate',
-      },
-      {
-        id: 3,
-        title: 'Paid Placement Support',
-        link: '/placement',
-      },
-    ],
-  },
-];
