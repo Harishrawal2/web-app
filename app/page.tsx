@@ -9,6 +9,7 @@ import { FaReact, FaNode } from 'react-icons/fa'
 import { TbBrandNextjs, TbBrandTailwind } from 'react-icons/tb'
 import Services from '@/components/Services/Services';
 import Link from 'next/link';
+import Testimonial from '@/components/Testimonial/Testimonial';
 
 const HomePage = () => {
   const disableTextSelection = () => {
@@ -158,6 +159,8 @@ const HomePage = () => {
       <div>
         <Services />
       </div>
+
+      <Testimonial />
     </>
   );
 };
