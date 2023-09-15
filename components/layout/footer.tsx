@@ -19,11 +19,11 @@ const Footer = () => {
         </p>
 
         <span className="inline-flex sm:ml-auto sm:mt-0 justify-center sm:justify-start xl:text-xl lg:text-lg md:text-md font-medium gap-1">
-          <Link href='/about' className="xl:ml-3 lg:ml-0 ml-0 text-gray-500">
-            About Us ||
+          <Link href='https://fullstackcode.in/' target='_blank' className="xl:ml-3 lg:ml-0 ml-0 text-gray-500">
+            Blogs |
           </Link>
-          <Link href='/' className="xl:ml-3 lg:ml-0 ml-0 text-gray-500">
-            Terms and Conditions ||
+          <Link href='/about' className="xl:ml-3 lg:ml-0 ml-0 text-gray-500">
+            About Us |
           </Link>
           <Link href='/' className="xl:ml-3 lg:ml-0 ml-0 text-gray-500">
             Privacy Policy

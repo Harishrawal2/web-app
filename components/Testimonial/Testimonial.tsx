@@ -13,13 +13,13 @@ const testimonials = [
     {
         id: 2,
         name: 'Vipin Kumar',
-        content: "The knowledge and skills I've gained have opened doors to new opportunities and personal growth. I can't thank the team at [Your School/Program/Company] enough for their dedication to education and excellence",
+        content: "The knowledge and skills I've gained have opened doors to new opportunities and personal growth. I can't thank the team at Revise Study Academy enough for their dedication to education and excellence",
         role: "Full Stack Developer",
     },
     {
         id: 3,
         name: 'Sunil Kumar',
-        content: "It's been a journey of growth, learning, and discovery. I've gained not only knowledge and skills but also the confidence to pursue my passions. [Your School/Program/Company] has truly changed my life for the better",
+        content: "It's been a journey of growth, learning, and discovery. I've gained not only knowledge and skills but also the confidence to pursue my passions. Revise Study Academy has truly changed my life for the better",
         role: "Full Stack Developer",
     },
 ];
@@ -32,7 +32,7 @@ const Testimonial = () => {
             <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
                 <h1 className="title-font sm:text-4xl text-3xl font-bold text-gray-900 -mb-60">Our Student Feedback</h1>
             </div>
-            <Carousel showThumbs={false}>
+            <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} transitionTime={500} interval={5000}>
                 {
                     testimonial.map((item) => (
                         <div className="container px-5 py-24 mx-auto" key={item.id}>
