@@ -5,6 +5,8 @@ import Link from 'next/link'
 import { TypeAnimation } from 'react-type-animation'
 import FadeIn from '../Slider/FadeIn'
 import TimeLine from './TimeLine'
+import Skills from './Skills'
+import Projects from './Projects'
 
 const Portfolio = () => {
 
@@ -48,6 +50,8 @@ const Portfolio = () => {
             </div >
             {/* </div> */}
             <TimeLine />
+            <Skills />
+            <Projects />
         </>
     )
 }
