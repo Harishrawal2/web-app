@@ -111,3 +111,9 @@
   background-color: #f0f0f0; /* Change to your desired color */
 }
 
+.bg-custom {
+  background-image: url("/online.jpg"); /* Replace with the path to your image */
+  background-size: cover;
+  background-position: center center;
+  background-position: absolute;
+}

@@ -3,6 +3,7 @@ import React, { useRef, useState } from 'react'
 import Image from 'next/image'
 import emailjs from '@emailjs/browser'
 import { useRouter } from 'next/navigation';
+import WhatsAppConnect from '@/components/WhatsAppConnect';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -171,7 +172,12 @@ export default function Contact() {
                                         value={formData.message}
                                         onChange={handleInputChange} placeholder='Write a message...'></textarea>
                                 </div>
-                                <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg font-medium">Send Message</button>
+                                <div className='flex items-center justify-around'>
+                                    <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg font-medium">Send Message</button>
+                                    <button className='gap-5'>
+                                        <WhatsAppConnect />
+                                    </button>
+                                </div>
                             </form>
                         )}
                     </div>

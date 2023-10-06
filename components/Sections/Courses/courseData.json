@@ -19,5 +19,19 @@
     "category": "Development",
     "title": "Back-End Development",
     "description": "Learn JavaScript, NodeJS, Express, and MongoDB Back-End Development Live classes"
+  },
+  {
+    "id": 4,
+    "img": "/backend.png",
+    "category": "Programming",
+    "title": "JavaScript",
+    "description": "Learn JavaScript, NodeJS, Express, and MongoDB Back-End Development Live classes"
+  },
+  {
+    "id": 5,
+    "img": "/backend.png",
+    "category": "NoSQL Database",
+    "title": "MongoDB",
+    "description": "Learn JavaScript, NodeJS, Express, and MongoDB Back-End Development Live classes"
   }
 ]
