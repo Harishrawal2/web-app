@@ -7,6 +7,7 @@ import FadeIn from '../Slider/FadeIn'
 import TimeLine from './TimeLine'
 import Skills from './Skills'
 import Projects from './Projects'
+import Experience from '../Experiences/Experience'
 
 const Portfolio = () => {
 
@@ -55,6 +56,7 @@ const Portfolio = () => {
             < TimeLine />
             <Skills />
             <Projects />
+            <Experience />
         </>
 
     )
