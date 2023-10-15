@@ -1,7 +1,54 @@
 "use client"
 import React, { useState } from 'react'
 import { AiFillHtml5 } from 'react-icons/ai'
-import data from './Skills.json'
+import { BiLogoJavascript, BiLogoAws, BiLogoReact, BiLogoTailwindCss, BiMobile, BiLogoNodejs, BiLogoGithub } from 'react-icons/bi'
+import { SiExpress, SiMongodb } from 'react-icons/si'
+
+const data = [
+    {
+        "id": 1,
+        "title": "HTML/CSS",
+        "icon": <AiFillHtml5 />
+    },
+    {
+        "id": 2,
+        "title": "JavaScript",
+        "icon": <BiLogoJavascript />
+    },
+    {
+        "id": 3, "title": "React JS",
+        "icon": <BiLogoReact />
+    },
+    {
+        "id": 4, "title": "Tailwind CSS",
+        "icon": <BiLogoTailwindCss />
+    },
+    {
+        "id": 5, "title": "React Native",
+        "icon": <BiMobile />
+    },
+    {
+        "id": 6, "title": "Node JS",
+        "icon": <BiLogoNodejs />
+    },
+    {
+        "id": 7, "title": "Express",
+        "icon": <SiExpress />
+    },
+    {
+        "id": 8, "title": "MongoDB",
+        "icon": <SiMongodb />
+    },
+    {
+        "id": 9, "title": "AWS",
+        "icon": <BiLogoAws />
+    },
+    {
+        "id": 10, "title": "Git/Github",
+        "icon": <BiLogoGithub />
+    }
+]
+
 
 const Skills = () => {
     const [skill, setSkill] = useState(data)
@@ -16,12 +63,12 @@ const Skills = () => {
                         {
                             skill.map((items) => (
                                 <>
-                                    <div className="lg:w-2/6 md:w-1/2 p-10" key={items.id}>
-                                        <div className="border border-gray-200 bg-white transition p-4 rounded-lg">
+                                    <div className="lg:w-2/6 md:w-1/2 w-1/2 xl:p-5 lg:p-5 md:p-4 p-2" key={items.id}>
+                                        <div className="border border-gray-200 bg-white skillsPoint hover:transform hover:scale-105 transition-transform duration-300 ease-in-out p-6 rounded-lg">
                                             <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                                                <AiFillHtml5 />
+                                                <p className='text-6xl rounded-full'>{items.icon}</p>
                                             </div>
-                                            <h1 className='text-xl font-semibold'>{items.title}</h1>
+                                            <h1 className='lg:text-2xl text-xl font-semibold'>{items.title}</h1>
                                         </div>
                                     </div>
                                 </>
