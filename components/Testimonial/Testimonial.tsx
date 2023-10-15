@@ -30,7 +30,7 @@ const Testimonial = () => {
     return (
         <>
             <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-                <h1 className="title-font sm:text-4xl text-3xl font-bold text-gray-900 -mb-60">Our Student Feedback</h1>
+                <h1 className="title-font sm:text-4xl text-3xl py-20 font-bold text-gray-900 -mb-60">Our Student Feedback</h1>
             </div>
             <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} transitionTime={500} interval={5000}>
                 {
