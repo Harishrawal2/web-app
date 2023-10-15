@@ -1,0 +1,12 @@
+[
+  { "id": 1, "title": "HTML/CSS" },
+  { "id": 2, "title": "JavaScript" },
+  { "id": 3, "title": "React JS" },
+  { "id": 4, "title": "Tailwind CSS" },
+  { "id": 5, "title": "React Native" },
+  { "id": 6, "title": "Node" },
+  { "id": 7, "title": "Express" },
+  { "id": 8, "title": "MongoDB" },
+  { "id": 9, "title": "AWS" },
+  { "id": 10, "title": "Git/Github" }
+]

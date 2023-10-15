@@ -6,8 +6,8 @@ import { IoIosSchool } from 'react-icons/io'
 const TimeLine = () => {
     return (
         <>
-            <section className="text-gray-600 body-font">
-                <div className="container px-5 py-24 mx-auto flex flex-wrap">
+            <section className="text-gray-900 body-font">
+                <div className="container px-5 py-5 mx-auto flex flex-wrap">
                     <div className="flex flex-col text-center w-full mb-20">
                         <h1 className="sm:text-5xl text-2xl font-bold title-font mb-4 text-gray-900">My Education</h1>
                     </div>
