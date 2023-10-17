@@ -56,7 +56,8 @@ const Skills = () => {
         <>
             <section className="bg-slate-600 text-white-600 body-font min-h-screen">
                 <div className="flex flex-col py-10 text-center w-full">
-                    <h1 className="sm:text-5xl text-3xl font-bold title-font mb-2 text-white">My Skills</h1>
+                    <h1 className="sm:text-5xl text-3xl font-bold title-font mb-2
+                     text-white">My Skills</h1>
                 </div>
                 <div className="container px-5 py-10 mx-auto">
                     <div className="flex flex-wrap text-center">
