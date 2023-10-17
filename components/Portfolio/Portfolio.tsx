@@ -8,6 +8,7 @@ import TimeLine from './TimeLine'
 import Skills from './Skills'
 import Projects from './Projects'
 import Experience from '../Experiences/Experience'
+import Certificate from './Certificate'
 
 const Portfolio = () => {
 
@@ -40,8 +41,8 @@ const Portfolio = () => {
                             <p className='mt-2 lg:text-xl xl:text-xl text-lg font-medium text-white'>I've Total 2 years of experience, 1 Year of Experience in developing web applications and 1 Year of Experience in Teaching. I'm currently working on a full stack web application using MERN stack. I'm also a freelancer.</p>
                             <div className="py-10 flex text-xl font-medium items-center gap-8">
                                 <Link href="/HarishResumeExp.pdf"
-                                    target='_blank' className='bg-indigo-500 hover:bg-indigo-400 text-white px-10 py-2 rounded-full transition'>Resume</Link>
-                                <Link href='/contact' className='bg-green-500 hover:bg-green-400 text-white px-10 py-2 rounded-full' target='_blank'>Contact</Link>
+                                    target='_blank' className='bg-indigo-500 hover:bg-indigo-400 text-white px-10 py-2 rounded-full hover:transform hover:scale-105 transition-transform duration-300 ease-in-out'>Resume</Link>
+                                <Link href='/contact' className='bg-green-500 hover:bg-green-400 text-white px-10 py-2 rounded-full hover:transform hover:scale-105 transition-transform duration-300 ease-in-out' target='_blank'>Contact</Link>
                             </div>
                         </div>
                         <FadeIn delay={.5} direction='left'>
@@ -57,6 +58,7 @@ const Portfolio = () => {
             <Skills />
             <Projects />
             <Experience />
+            <Certificate />
         </>
 
     )
