@@ -11,10 +11,9 @@ import Experience from '../Experiences/Experience'
 import Certificate from './Certificate'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { SiLeetcode, SiBlogger } from 'react-icons/si'
+import { motion } from 'framer-motion'
 
 const Portfolio = () => {
-
-
     return (
         <>
             <div className='bg-slate-700 text-white min-h-screen'>
@@ -87,11 +86,18 @@ const Portfolio = () => {
                                 </Link>
                             </div>
                         </div>
-                        <FadeIn delay={.5} direction='left'>
-                            <div className='xl:ml-10 lg:ml-10 border lg:h-[350px] lg:w-[350px] md:h-[250px] md:w-[250px] rounded-full h-[300px] w-[300px] lg:py-0 md:py-0 bg-yellow-500 shadow-xl shadow-yellow-500/50 xl:mt-0 lg:mt-0 md:mt-0 mt-10'>
-                                <Image src={picofme} alt='Image' className='rounded-full' layout='responsive' objectFit='cover' priority={true} quality={100} placeholder='blur' blurDataURL='/picofme.png' sizes='(max-width: 400px) 100vw, 400px' />
-                            </div>
-                        </FadeIn>
+                        <motion.div
+                            animate={{ y: [20, -20, 20] }} // Animation sequence (down, up, down)
+                            transition={{ duration: 4, repeat: Infinity, repeatType: "reverse" }} // Infinite loop
+                        >
+                            <FadeIn delay={.5} direction='down'>
+                                <div className='xl:ml-10 lg:ml-10 border lg:h-[350px] lg:w-[350px] md:h-[250px] md:w-[250px] rounded-full h-[300px] w-[300px] lg:py-0 md:py-0 bg-yellow-500 shadow-xl shadow-yellow-500/50 xl:mt-0 lg:mt-0 md:mt-0 mt-10'>
+
+                                    <Image src={picofme} alt='Image' className='rounded-full hover:transform hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer' layout='responsive' objectFit='cover' priority={true} quality={100} placeholder='blur' blurDataURL='/picofme.png' sizes='(max-width: 400px) 100vw, 400px' />
+
+                                </div>
+                            </FadeIn>
+                        </motion.div>
                     </div>
                 </div >
             </div >
