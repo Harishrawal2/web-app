@@ -17,21 +17,21 @@ const Services = () => {
         <>
             <section className="text-gray-600 body-font max-w-7xl mx-auto px-4">
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-                    <FadeIn delay={1} direction="right" fullWidth>
-                        <div className="lg:max-w-xl lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                    <FadeIn delay={.1} direction="right" fullWidth>
+                        <div className="lg:max-w-xl lg:w-full md:w-1/2 mb-10 md:mb-0">
 
                             <Image className="object-cover object-center rounded" alt="hero" src='/services1.jpg' width={700} height={700} />
                         </div>
                     </FadeIn>
-                    <FadeIn delay={1} direction="left" fullWidth>
-                        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">Real-World Live Project
-                                <br className="hidden lg:inline-block" /><span className='shadow-indigo-500 text-indigo-500 logo'>Experience</span>
+                    <FadeIn delay={.1} direction="left" fullWidth>
+                        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 w-full flex flex-col md:items-start md:text-left items-center text-center">
+                            <h1 className="title-font lg:text-4xl md:text-3xl text-2xl mb-4 font-bold text-gray-900">Real-World Live Project
+                                <br className="hidden lg:inline-block" /><p className='shadow-indigo-500 text-indigo-500 logo text-left'>Experience</p>
                             </h1>
-                            <p className="mb-8 leading-relaxed text-xl text-gray-500" onMouseDown={disableTextSelection} onMouseUp={enableTextSelection}>Bridge the gap between theory and practice with our Real-World Live Project program. As part of our hands-on training, you'll work on industry-relevant projects that simulate real-world scenarios. Gain practical experience, problem-solving skills, and the confidence to excel in your IT career.</p>
+                            <p className="mb-8 leading-relaxed lg:text-xl md:text-xl text-lg text-gray-500" onMouseDown={disableTextSelection} onMouseUp={enableTextSelection}>Bridge the gap between theory and practice with our Real-World Live Project program. As part of our hands-on training, you'll work on industry-relevant projects that simulate real-world scenarios. Gain practical experience, problem-solving skills, and the confidence to excel in your IT career.</p>
                             <div className="flex items-center justify-between">
-                                <Link href='/' className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded lg:text-xl text-md">Read more...</Link>
-                                <Link href='/courses' className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded lg:text-xl lg:text-md">Explore Course</Link>
+                                <Link href='/' className="inline-flex text-white bg-indigo-500 border-0 py-2 lg:px-6 px-2 focus:outline-none hover:bg-indigo-600 rounded lg:text-xl text-lg">Read more...</Link>
+                                <Link href='/courses' className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 lg:px-6 px-2 focus:outline-none hover:bg-gray-200 rounded lg:text-xl lg:text-md text-lg">Explore Course</Link>
                             </div>
                         </div>
                     </FadeIn>
