@@ -18,7 +18,7 @@ const WhatsAppConnect = () => {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 text-white px-4 py-2 rounded-md inline-block mt-4"
+                className="bg-green-500 text-white mb-4 px-4 py-2 rounded-md inline-block mt-4"
             >
                 Chat on WhatsApp
             </Link>

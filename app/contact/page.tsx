@@ -173,7 +173,7 @@ export default function Contact() {
                                         onChange={handleInputChange} placeholder='Write a message...'></textarea>
                                 </div>
                                 <div className='flex items-center justify-around'>
-                                    <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg font-medium">Send Message</button>
+                                    <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-md font-medium">Send Message</button>
                                     <button className='gap-5'>
                                         <WhatsAppConnect />
                                     </button>
