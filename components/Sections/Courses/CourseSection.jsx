@@ -27,7 +27,7 @@ const CourseSection = () => {
             <div>
               <input
                 type="text"
-                className="border rounded lg:px-5 lg:py-2 lg:text-xl text-lg"
+                className="border rounded lg:px-5 lg:py-2 md:px-5 md:py-2 px-1 py-1 lg:text-xl text-md"
                 placeholder="Search Courses"
                 value={filter}
                 onChange={(e) => setFilter(e.target.value)}
@@ -38,7 +38,7 @@ const CourseSection = () => {
               {/* Category filter */}
               <select
                 value={selectedCategory}
-                className="border rounded lg:px-5 lg:py-2 lg:text-xl text-lg"
+                className="border rounded lg:px-5 lg:py-2 md:px-5 md:py-2 px-1 py-2 lg:text-xl text-md"
                 onChange={(e) => setSelectedCategory(e.target.value)}
               >
                 <option value="">All Categories</option>

@@ -33,12 +33,12 @@ const HomePage = () => {
       >
         <div>
           <div>
-            <FadeIn delay={0.2} direction="down" padding fullWidth>
+            <FadeIn delay={0.1} direction="down" padding fullWidth>
               <h1 className="mt-[30px] text-center xl:text-6xl lg:text-6xl text-3xl leading-tight xs:text-[64px] text-gray-900 font-extrabold max-w-[1050px] heroHeading" onMouseDown={disableTextSelection} onMouseUp={enableTextSelection}>
                 Mastering Full Stack Development Your Path to Digital Excellence
               </h1>
             </FadeIn>
-            <FadeIn delay={0.4} direction="down" padding fullWidth>
+            <FadeIn delay={0.1} direction="down" padding fullWidth>
               <h5 className="text-center xl:text-5xl lg:text-4xl text-xl xs:text-xl mt-2 max-w-[800px] font-bold shadow-indigo-500 text-gray-600 hover:shadow-green-500/50">
                 Learn <span className="zafronText">
                   <TypeAnimation
@@ -63,9 +63,9 @@ const HomePage = () => {
           </div>
           <div>
             <FadeIn delay={0.4} direction="down" padding fullWidth>
-              <button className="text-center mt-[30px] xs:text-xl text-indigo-500 max-w-[500px] ring-2 rounded-full ring-indigo-500 text-xl px-5 py-2 font-bold hover:bg-indigo-500 hover:text-white transition duration-150 ease-out hover:ease-in mb-20">
+              <button className="text-center mt-[30px] xs:text-xl text-indigo-500 max-w-[500px] ring-2 rounded-full ring-indigo-500 text-xl px-8 py-2 font-bold hover:bg-indigo-500 hover:text-white transition duration-150 ease-out hover:ease-in mb-20">
                 <Link href="/contact">
-                  Join Now
+                  Book Demo
                 </Link>
               </button>
             </FadeIn>
@@ -127,14 +127,14 @@ const HomePage = () => {
               onMouseDown={disableTextSelection}
               onMouseUp={enableTextSelection}
             >
-              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">
+              <h1 className="title-font lg:text-4xl md:text-3xl text-2xl mb-4 font-bold text-gray-900">
                 Dynamic Learning with{" "}
-                <p className="shadow-indigo-500 text-indigo-500 logo">
+                <p className="shadow-indigo-500 text-indigo-500 logo text-left">
                   {" "}
                   Live Classes
                 </p>
               </h1>
-              <p className="mb-8 leading-relaxed text-xl text-gray-500">
+              <p className="leading-relaxed lg:text-xl md:text-xl text-lg text-gray-500">
                 Experience education like never before with our engaging live
                 classes. Join expert instructors in real-time sessions, ask
                 questions, and interact with fellow learners. Stay ahead in your
@@ -142,7 +142,7 @@ const HomePage = () => {
                 learning experience.
               </p>
             </div>
-            <div className="lg:max-w-xl lg:w-full md:w-1/2 w-5/6">
+            <div className="lg:max-w-xl lg:w-full md:w-1/2">
               <Image
                 className="object-cover object-center rounded w-full"
                 alt="hero"
