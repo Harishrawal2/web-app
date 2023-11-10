@@ -46,6 +46,14 @@ const data = [
     {
         "id": 10, "title": "Git/Github",
         "icon": <BiLogoGithub />
+    },
+    {
+        "id": 11, "title": "CI/CD",
+        "icon": <BiLogoGithub />
+    },
+    {
+        "id": 12, "title": "Docker",
+        "icon": <BiLogoGithub />
     }
 ]
 
