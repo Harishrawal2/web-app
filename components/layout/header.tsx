@@ -24,7 +24,7 @@ const Header = () => {
               <div className="flex-shrink-0 text-white font-bold">
                 <Link href="/" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                   <BiCodeBlock className="text-4xl rounded-[14px] bg-indigo-500 shadow-lg shadow-indigo-500/100" />
-                  <p className="ml-3 text-3xl font-sans shadow-indigo-500/50 font-bold text-shadow-2xl text-indigo-500 logo">Revise <span className='text-gray-900 logo2'>Study</span> </p>
+                  <p className="ml-3 text-3xl font-sans shadow-indigo-500/50 font-bold text-shadow-2xl text-indigo-500 logo">Harish <span className='text-gray-900 logo2'>Rawal</span> </p>
                 </Link>
               </div>
             </div>

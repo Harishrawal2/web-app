@@ -104,8 +104,8 @@ const Portfolio = () => {
             {/* </div> */}
             < TimeLine />
             <Skills />
-            <Projects />
             <Experience />
+            <Projects />
             <Certificate />
         </>
 
